@@ -1,0 +1,32 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+.container{
+  display:grid;
+  grid-template-columns: 10% auto auto;
+  height: 100vh
+}
+
+.sideBar {
+  background: black;
+  color: white;
+}
+
+.sideBar ul li {
+  padding: 20px;
+  font-size:20px;
+  display:flex;
+  justify-content: center;
+}
+
+.sideBar ul li a {
+  color: grey;
+}
+
+.container .sideBar .logo{
+  width:100%;
+  margin-bottom: 40px;
+}
