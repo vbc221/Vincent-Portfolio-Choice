@@ -6,16 +6,19 @@
 
 .container{
   display:grid;
-  grid-template-columns: 10% auto auto;
-  height: 100vh
+  grid-template-columns: 8% auto auto;
+  height: 100vh;
+  text-align: center;
 }
+
+/* SIDEBAR CSS */
 
 .sideBar {
   background: black;
   color: white;
 }
 
-.sideBar ul li {
+.sideBar .mainNav li {
   padding: 20px;
   font-size:20px;
   display:flex;
@@ -27,6 +30,20 @@
 }
 
 .container .sideBar .logo{
-  width:100%;
+  width:75%;
   margin-bottom: 40px;
+}
+
+.container .sideBar .outsideLinks{
+  margin-top:40px;
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-end;
+}
+
+.fab{
+  color:grey;
+  font-size:15px;
+  margin-top:20px;
+  padding:5px;
 }
