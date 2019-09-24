@@ -102,5 +102,6 @@
 
 .sideContent img{
   border-radius: 50%;
+  -webkit-backface-visibility: hidden;
 }
 
