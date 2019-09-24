@@ -4,11 +4,8 @@
   margin:0;
   list-style: none;
   font-family: 'Saira Extra Condensed', sans-serif;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
+
 
 .container{
   display:grid;
@@ -99,12 +96,13 @@
 .sideContent{
   grid-row:2/3;
   grid-column: 3/4;
-  margin:auto;
 }
 
 .sideContent img{
   border-radius: 50%;
-  transition:none;
-  -webkit-transition:none;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
