@@ -4,6 +4,10 @@
   margin:0;
   list-style: none;
   font-family: 'Saira Extra Condensed', sans-serif;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .container{
@@ -75,7 +79,6 @@
 
 .mainNav a:hover i{
   display:none;
-  -webkit-backface-visibility: hidden;
 }
 
 .mainNav a:hover b{
@@ -83,7 +86,6 @@
   font-size:15px;
   text-transform: uppercase;
   color:#05F2C7;
-  -webkit-backface-visibility: hidden;
 }
 
 /* Index.html Main content */
@@ -102,6 +104,7 @@
 
 .sideContent img{
   border-radius: 50%;
-  -webkit-backface-visibility: hidden;
+  transition:none;
+  -webkit-transition:none;
 }
 
