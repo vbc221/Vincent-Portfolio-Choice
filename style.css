@@ -2,11 +2,13 @@
   box-sizing: border-box;
   padding:0;
   margin:0;
+  list-style: none;
+  font-family: 'Saira Extra Condensed', sans-serif;
 }
 
 .container{
   display:grid;
-  grid-template-columns: 8% auto auto;
+  grid-template-columns: 7% auto auto;
   height: 100vh;
   text-align: center;
 }
@@ -20,12 +22,12 @@
 
 .sideBar .mainNav li {
   padding: 20px;
-  font-size:20px;
+  font-size:15px;
   display:flex;
   justify-content: center;
 }
 
-.sideBar ul li a {
+.fas{
   color: grey;
 }
 
@@ -47,3 +49,34 @@
   margin-top:20px;
   padding:5px;
 }
+
+
+
+.mainContent{
+  text-align: center;
+}
+
+.fas:hover, .fab:hover, .active{
+  color:#05F2C7;
+}
+
+.mainNav li b{
+  display:none;
+  
+}
+
+.mainNav a{
+  text-decoration: none;
+}
+
+.mainNav a:hover i{
+  display:none;
+}
+
+.mainNav a:hover b{
+  display: block;
+  font-size:15px;
+  text-transform: uppercase;
+  color:#05F2C7;
+}
+
