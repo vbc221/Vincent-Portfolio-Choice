@@ -9,6 +9,7 @@
 .container{
   display:grid;
   grid-template-columns: 7% auto auto;
+  grid-template-rows: 20% 60% 20%;
   height: 100vh;
   text-align: center;
 }
@@ -18,6 +19,7 @@
 .sideBar {
   background: black;
   color: white;
+  grid-row:1/4;
 }
 
 .sideBar .mainNav li {
@@ -56,7 +58,7 @@
   text-align: center;
 }
 
-.fas:hover, .fab:hover, .active{
+.fas:hover, .fab:hover{
   color:#05F2C7;
 }
 
@@ -78,5 +80,24 @@
   font-size:15px;
   text-transform: uppercase;
   color:#05F2C7;
+}
+
+/* Index.html Main content */
+
+.mainContent{
+  grid-row:2/3;
+  grid-column: 2/3;
+  background:blue;
+}
+
+.sideContent{
+  grid-row:2/3;
+  grid-column: 3/4;
+}
+
+.sideContent img{
+  border-radius: 50%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
