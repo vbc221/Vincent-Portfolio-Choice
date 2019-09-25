@@ -9,8 +9,8 @@
 
 .container{
   display:grid;
-  grid-template-columns: 7% auto 40%;
-  grid-template-rows: 20% 60% 20%;
+  grid-template-columns: 7% repeat(4,auto);
+  grid-template-rows: repeat(4,auto);
   height: 100vh;
   text-align: center;
   background-image: url('images/background.jpg');
@@ -22,7 +22,7 @@
 .sideBar {
   background: black;
   color: white;
-  grid-row:1/4;
+  grid-row:1/5;
 }
 
 .sideBar .mainNav li {
@@ -55,8 +55,6 @@
   padding:5px;
 }
 
-
-
 .mainContent{
   text-align: center;
 }
@@ -88,21 +86,57 @@
 /* Index.html Main content */
 
 .mainContent{
-  grid-row:2/3;
-  grid-column: 2/3;
-  border:1px solid black;
+  grid-row:2/4;
+  grid-column: 2/4;
+  text-align:center;
+  display:flex;
+  justify-content: center;
+  padding-left:30px;
 }
 
+.mainContent p{
+  font-size:20px;
+  margin-top:120px;
+  font-family: 'Roboto',
+  sans-serif;
+  line-height: 1.5;
+  font-style: bold;
+  color:black;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  letter-spacing: .10em;
+  /* Adjust as needed */
+  animation: typing 5s steps(40, end);
+}
+
+
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+
 .sideContent{
-  grid-row:2/3;
-  grid-column: 3/4;
-  border: 1px solid black;
+  grid-row:2/4;
+  grid-column: 4/6;
 }
 
 .sideContent img{
   border-radius: 50%;
   background-position: center;
-  margin: 30px auto;
+  display:flex;
 }
 
+/* ABOUT ME PAGE */
 
+
+/* RESUME PAGE */
