@@ -9,7 +9,7 @@
 
 .container{
   display:grid;
-  grid-template-columns: 7% repeat(4,auto);
+  grid-template-columns: 6% repeat(4,auto);
   grid-template-rows: repeat(4,auto);
   height: 100vh;
   text-align: center;
@@ -26,10 +26,14 @@
 }
 
 .sideBar .mainNav li {
-  padding: 20px;
+  padding: 30px;
   font-size:15px;
   display:flex;
   justify-content: center;
+}
+
+.mainNav{
+  margin-top:0px;
 }
 
 .fas{
@@ -38,19 +42,21 @@
 
 .container .sideBar .logo{
   width:75%;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
-.container .sideBar .outsideLinks{
-  margin-top:40px;
+.outsideLinks{
+  margin-top:140px;
   display:flex;
-  flex-direction:column;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end
 }
+
+
 
 .fab{
   color:grey;
-  font-size:15px;
+  font-size:17px;
   margin-top:20px;
   padding:5px;
 }
@@ -65,11 +71,11 @@
 
 .mainNav li b{
   display:none;
-  
 }
 
 .mainNav a{
   text-decoration: none;
+  position: absolute;
 }
 
 .mainNav a:hover i{
@@ -78,7 +84,7 @@
 
 .mainNav a:hover b{
   display: block;
-  font-size:15px;
+  font-size:13px;
   text-transform: uppercase;
   color:#05F2C7;
 }
