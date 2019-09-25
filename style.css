@@ -137,6 +137,9 @@
 }
 
 /* ABOUT ME PAGE */
-
+.container .aboutMe{
+  grid-row:2/4;
+  grid-column:4/6;
+}
 
 /* RESUME PAGE */
