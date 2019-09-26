@@ -52,8 +52,6 @@
   justify-content: flex-end
 }
 
-
-
 .fab{
   color:grey;
   font-size:17px;
@@ -89,6 +87,10 @@
   color:#05F2C7;
 }
 
+.mainNav .active{
+  color:#05F2C7;
+}
+
 /* Index.html Main content */
 
 .mainContent{
@@ -108,12 +110,12 @@
   line-height: 1.5;
   font-style: bold;
   color:black;
-  overflow: hidden;
   /* Ensures the content is not revealed until the animation */
-  white-space: nowrap;
+  overflow: hidden;
   /* Keeps the content on a single line */
-  letter-spacing: .10em;
+  white-space: nowrap;
   /* Adjust as needed */
+  letter-spacing: .10em;
   animation: typing 5s steps(40, end);
 }
 
